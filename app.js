@@ -26,6 +26,21 @@ const elements = {
     loading: document.getElementById('loading')
 };
 
+// Función para cargar imágenes con manejo de errores
+function loadImageWithFallback(imgElement, url, fallbackUrl = 'https://via.placeholder.com/300/333333/666666?text=No+Image') {
+    const image = new Image();
+    image.onload = function() {
+        imgElement.src = url;
+        imgElement.style.display = 'block';
+    };
+    image.onerror = function() {
+        console.warn('Error al cargar la imagen:', url);
+        imgElement.src = fallbackUrl;
+        imgElement.style.display = 'block';
+    };
+    image.src = url;
+}
+
 // Configuración
 const GITHUB_USER = 'emuWebview';
 const GITHUB_REPO = 'music';
@@ -186,10 +201,17 @@ function renderPlaylists() {
         return;
     }
 
-    elements.playlistsContainer.innerHTML = state.playlists.map(playlist => `
+    elements.playlistsContainer.innerHTML = state.playlists.map(playlist => {
+        // Usar una imagen de placeholder mientras se carga la portada
+        const placeholderUrl = 'https://via.placeholder.com/300/333333/666666?text=Cargando...';
+        
+        return `
         <div class="playlist-card" data-id="${playlist.id}">
             <div class="playlist-cover">
-                <img src="${playlist.coverUrl}" alt="${playlist.name}">
+                <img src="${placeholderUrl}" 
+                     data-src="${playlist.coverUrl}" 
+                     alt="${playlist.name}"
+                     onerror="this.onerror=null; this.src='https://via.placeholder.com/300/333333/666666?text=Error+al+cargar'">
                 <button class="play-btn" data-id="${playlist.id}">
                     <span class="material-icons">play_arrow</span>
                 </button>
@@ -199,8 +221,16 @@ function renderPlaylists() {
                 <p>${playlist.description || ''}</p>
                 <div class="tracks-container" id="tracks-${playlist.id}"></div>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
+    
+    // Cargar imágenes de forma diferida
+    document.querySelectorAll('.playlist-cover img').forEach(img => {
+        const src = img.dataset.src;
+        if (src) {
+            loadImageWithFallback(img, src);
+        }
+    });
 
     // Agregar event listeners a las playlists
     document.querySelectorAll('.playlist-card').forEach(card => {
@@ -266,7 +296,15 @@ function playTrack(track, playlist, index) {
     // Actualizar UI
     elements.currentTrackElement.textContent = track.name;
     elements.currentPlaylistElement.textContent = `De: ${playlist.name}`;
-    elements.currentCover.src = playlist.coverUrl;
+    
+    // Cargar la imagen de portada con manejo de errores
+    if (playlist.coverUrl) {
+        loadImageWithFallback(
+            elements.currentCover, 
+            playlist.coverUrl,
+            'https://via.placeholder.com/300/333333/666666?text=No+Image'
+        );
+    }
     
     // Construir URL del archivo de audio
     const audioUrl = `https://raw.githubusercontent.com/${CONFIG.github.repo}/${CONFIG.github.branch}/playlists/${playlist.id}/${track.file}`;

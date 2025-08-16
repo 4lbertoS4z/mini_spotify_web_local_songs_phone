@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Música</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Reproductor de Música FFVII Rebirth</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material-Icons|Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,31 +28,47 @@
 
             <div class="player-container" id="player-container">
                 <div class="now-playing">
-                    <img id="current-cover" src="" alt="Portada">
+                    <img id="current-cover" src="https://image.api.playstation.com/vulcan/ap/rnd/202308/3005/537b5208a8ee42935286a44b3b981da86d976bf54899bf98.jpg" alt="Portada del álbum">
                     <div class="track-info">
                         <h3 id="current-track">Selecciona una canción</h3>
-                        <p id="current-playlist"></p>
+                        <p id="current-playlist">FINAL FANTASY VII REBIRTH</p>
                     </div>
-                </div>
-
-                <div class="controls">
-                    <button id="prev-btn" class="control-btn">
-                        <span class="material-icons">skip_previous</span>
-                    </button>
-                    <button id="play-btn" class="control-btn play-btn">
-                        <span class="material-icons">play_arrow</span>
-                    </button>
-                    <button id="next-btn" class="control-btn">
-                        <span class="material-icons">skip_next</span>
+                    <button id="like-btn" class="icon-btn" aria-label="Añadir a favoritos">
+                        <span class="material-icons">favorite_border</span>
                     </button>
                 </div>
 
-                <div class="progress-container">
-                    <span id="current-time">0:00</span>
-                    <div class="progress-bar">
-                        <div class="progress"></div>
+                <div class="player-controls">
+                    <div class="controls-row">
+                        <button id="shuffle-btn" class="control-btn" aria-label="Modo aleatorio">
+                            <span class="material-icons">shuffle</span>
+                        </button>
+                        <button id="prev-btn" class="control-btn" aria-label="Canción anterior">
+                            <span class="material-icons">skip_previous</span>
+                        </button>
+                        <button id="play-btn" class="control-btn play" aria-label="Reproducir">
+                            <span class="material-icons">play_arrow</span>
+                        </button>
+                        <button id="next-btn" class="control-btn" aria-label="Siguiente canción">
+                            <span class="material-icons">skip_next</span>
+                        </button>
+                        <button id="repeat-btn" class="control-btn" aria-label="Repetir">
+                            <span class="material-icons">repeat</span>
+                        </button>
                     </div>
-                    <span id="duration">0:00</span>
+
+                    <div class="progress-container">
+                        <span id="current-time">0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <div class="volume-container">
+                    <span class="material-icons">volume_up</span>
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7" class="volume-slider">
                 </div>
 
                 <audio id="audio-player"></audio>
