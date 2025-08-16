@@ -1,0 +1,635 @@
+// Variable para almacenar los datos de las playlists
+let playlistsData = { playlists: [] };
+
+// Estado global de la aplicación
+const state = {
+    playlists: [],
+    currentTrack: null,
+    currentPlaylist: null,
+    currentTrackIndex: 0,
+    isPlaying: false,
+    volume: 0.7,
+    currentTime: 0,
+    duration: 0
+};
+
+// Elementos del DOM
+const elements = {
+    playlistsContainer: document.getElementById('playlists'),
+    audioPlayer: document.getElementById('audio-player'),
+    playBtn: document.getElementById('play-btn'),
+    prevBtn: document.getElementById('prev-btn'),
+    nextBtn: document.getElementById('next-btn'),
+    currentTrackElement: document.getElementById('current-track'),
+    currentPlaylistElement: document.getElementById('current-playlist'),
+    currentCover: document.getElementById('current-cover'),
+    loading: document.getElementById('loading')
+};
+
+// Configuración
+const GITHUB_USER = 'emuWebview';
+const GITHUB_REPO = 'music';
+const GITHUB_API = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents`;
+const RAW_CONTENT_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main`;
+
+// Configuración de la aplicación
+const CONFIG = {
+    github: {
+        user: GITHUB_USER,
+        repo: GITHUB_REPO,
+        branch: 'main'
+    }
+};
+
+// Inicializar la aplicación
+async function initApp() {
+    try {
+        // Cargar playlists
+        await loadPlaylists();
+        
+        // Configurar eventos
+        setupEventListeners();
+        
+        // Ocultar loading
+        elements.loading.style.display = 'none';
+    } catch (error) {
+        console.error('Error al inicializar la aplicación:', error);
+        elements.loading.textContent = 'Error al cargar las listas de reproducción';
+    }
+}
+
+// Obtener el contenido de un directorio desde GitHub
+async function fetchDirectory(path = '') {
+    try {
+        const response = await fetch(`${GITHUB_API}/${path}`);
+        
+        if (response.status === 403) {
+            // Límite de la API de GitHub alcanzado, intentar con un token si está disponible
+            throw new Error('Límite de la API de GitHub alcanzado. Por favor, intente más tarde o proporcione un token de acceso personalizado.');
+        }
+        
+        if (!response.ok) {
+            throw new Error(`Error HTTP: ${response.status}`);
+        }
+        
+        const contents = await response.json();
+        return contents;
+    } catch (error) {
+        console.error('Error al cargar el directorio:', error);
+        return [];
+    }
+}
+
+// Cargar listas de reproducción desde el archivo JSON local
+async function loadPlaylists() {
+    try {
+        setLoading(true);
+        
+        // Cargar el archivo JSON local
+        const response = await fetch('playlists.json');
+        
+        if (!response.ok) {
+            throw new Error(`Error al cargar playlists.json: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        if (!data.playlists || !Array.isArray(data.playlists)) {
+            throw new Error('Formato de archivo inválido: se esperaba un array en la propiedad playlists');
+        }
+        
+        console.log('Cargando playlists desde playlists.json...');
+        console.log('Número de playlists encontradas:', data.playlists.length);
+        
+        // Mapear los datos al formato esperado por la aplicación
+        state.playlists = data.playlists.map(playlist => {
+            const tracks = (playlist.tracks || []).map((track, index) => ({
+                id: track.id || `track-${index + 1}`,
+                name: track.name,
+                url: track.file,
+                file: track.file.split('/').pop()
+            }));
+            
+            console.log(`Playlist: ${playlist.name}, Canciones: ${tracks.length}`);
+            
+            return {
+                id: playlist.id,
+                name: playlist.name,
+                description: playlist.description,
+                coverUrl: playlist.coverUrl,
+                path: '',
+                tracks: tracks
+            };
+        });
+        
+        // Filtrar solo las playlists que tienen canciones
+        state.playlists = state.playlists.filter(playlist => playlist.tracks.length > 0);
+        
+        console.log('Playlists después de filtrar:', state.playlists.length);
+        
+        if (state.playlists.length === 0) {
+            throw new Error('No se encontraron playlists con canciones');
+        }
+        
+        renderPlaylists();
+    } catch (error) {
+        console.error('Error al cargar las listas de reproducción:', error);
+        showError('Error al cargar las listas de reproducción: ' + error.message);
+    } finally {
+        setLoading(false);
+    }
+}
+
+// Verificar si un archivo existe
+async function checkIfFileExists(url) {
+    try {
+        const response = await fetch(url, { method: 'HEAD', cache: 'no-cache' });
+        return response.ok;
+    } catch (error) {
+        console.error('Error al verificar el archivo:', url, error);
+        return false;
+    }
+}
+
+// Mostrar un mensaje de error
+function showError(message) {
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message';
+    errorDiv.textContent = message;
+    
+    // Insertar después del header
+    const header = document.querySelector('header');
+    if (header && header.nextSibling) {
+        header.parentNode.insertBefore(errorDiv, header.nextSibling);
+    } else {
+        document.body.insertBefore(errorDiv, document.body.firstChild);
+    }
+    
+    // Eliminar después de 5 segundos
+    setTimeout(() => {
+        errorDiv.remove();
+    }, 5000);
+}
+
+// Mostrar/ocultar indicador de carga
+function setLoading(isLoading) {
+    const loadingElement = document.getElementById('loading');
+    if (loadingElement) {
+        loadingElement.style.display = isLoading ? 'block' : 'none';
+    }
+}
+
+// Renderizar listas de reproducción
+function renderPlaylists() {
+    if (!state.playlists.length) {
+        elements.playlistsContainer.innerHTML = '<p>No hay listas de reproducción disponibles.</p>';
+        return;
+    }
+
+    elements.playlistsContainer.innerHTML = state.playlists.map(playlist => `
+        <div class="playlist-card" data-id="${playlist.id}">
+            <div class="playlist-cover">
+                <img src="${playlist.coverUrl}" alt="${playlist.name}">
+                <button class="play-btn" data-id="${playlist.id}">
+                    <span class="material-icons">play_arrow</span>
+                </button>
+            </div>
+            <div class="playlist-info">
+                <h3>${playlist.name}</h3>
+                <p>${playlist.description || ''}</p>
+                <div class="tracks-container" id="tracks-${playlist.id}"></div>
+            </div>
+        </div>
+    `).join('');
+
+    // Agregar event listeners a las playlists
+    document.querySelectorAll('.playlist-card').forEach(card => {
+        const playlistId = card.dataset.id;
+        const playlist = state.playlists.find(p => p.id === playlistId);
+        
+        // Mostrar/ocultar canciones al hacer clic en la portada
+        card.querySelector('.playlist-cover').addEventListener('click', () => {
+            togglePlaylistTracks(playlist);
+        });
+        
+        // Reproducir playlist al hacer clic en el botón de play
+        card.querySelector('.play-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            playTrack(playlist.tracks[0], playlist, 0);
+        });
+    });
+}
+
+// Alternar visibilidad de las canciones de una playlist
+function togglePlaylistTracks(playlist) {
+    const tracksContainer = document.getElementById(`tracks-${playlist.id}`);
+    
+    if (tracksContainer.style.display === 'block') {
+        tracksContainer.style.display = 'none';
+        return;
+    }
+    
+    // Ocultar otros contenedores de canciones
+    document.querySelectorAll('.tracks-container').forEach(container => {
+        container.style.display = 'none';
+    });
+    
+    // Mostrar las canciones de esta playlist
+    tracksContainer.innerHTML = playlist.tracks.map((track, index) => `
+        <div class="track-item" data-track-id="${track.id}" data-index="${index}">
+            <span class="track-number">${index + 1}</span>
+            <span class="track-name">${track.name}</span>
+            <span class="track-duration">-:--</span>
+        </div>
+    `).join('');
+    
+    tracksContainer.style.display = 'block';
+    
+    // Agregar event listeners a las canciones
+    tracksContainer.querySelectorAll('.track-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const index = parseInt(item.dataset.index);
+            playTrack(playlist.tracks[index], playlist, index);
+        });
+    });
+}
+
+// Reproducir una canción
+function playTrack(track, playlist, index) {
+    if (!track || !playlist) return;
+    
+    // Actualizar estado
+    state.currentTrack = track;
+    state.currentPlaylist = playlist;
+    state.currentTrackIndex = index;
+    
+    // Actualizar UI
+    elements.currentTrackElement.textContent = track.name;
+    elements.currentPlaylistElement.textContent = `De: ${playlist.name}`;
+    elements.currentCover.src = playlist.coverUrl;
+    
+    // Construir URL del archivo de audio
+    const audioUrl = `https://raw.githubusercontent.com/${CONFIG.github.repo}/${CONFIG.github.branch}/playlists/${playlist.id}/${track.file}`;
+    
+    // Mostrar indicador de carga
+    elements.currentTrackElement.innerHTML = `${track.name} <span class="loading-spinner">↻</span>`;
+    
+    // Configurar el reproductor de audio
+    elements.audioPlayer.src = audioUrl;
+    elements.audioPlayer.volume = state.volume;
+    
+    // Manejar errores de carga
+    elements.audioPlayer.onerror = function() {
+        console.error('Error al cargar el audio:', audioUrl);
+        elements.currentTrackElement.innerHTML = `
+            ${track.name}
+            <div style="color: #ff6b6b; font-size: 0.8em; margin: 10px 0;">
+                Error al cargar el audio. Por favor, verifica que:
+                <ul style="text-align: left; margin: 5px 0 0 20px;">
+                    <li>El archivo exista en la ruta correcta</li>
+                    <li>El repositorio sea privado y el token tenga acceso</li>
+                    <li>El archivo sea un formato de audio compatible (MP3, WAV, etc.)</li>
+                </ul>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="${audioUrl}" target="_blank" style="color: #1db954; text-decoration: none;">
+                    Intentar abrir directamente
+                </a>
+            </div>
+        `;
+        state.isPlaying = false;
+        updatePlayButton();
+    };
+    
+    // Reproducir
+    const playPromise = elements.audioPlayer.play();
+    
+    if (playPromise !== undefined) {
+        playPromise
+            .then(() => {
+                state.isPlaying = true;
+                updatePlayButton();
+                elements.currentTrackElement.textContent = track.name; // Remove loading spinner
+            })
+            .catch(error => {
+                console.error('Error al reproducir la canción:', error);
+                elements.currentTrackElement.textContent = `${track.name} (Error al reproducir)`;
+                state.isPlaying = false;
+                updatePlayButton();
+            });
+    }
+    
+    // Resaltar canción actual
+    updateActiveTrack();
+}
+
+// Configurar event listeners
+function setupEventListeners() {
+    // Botones de control
+    elements.playBtn.addEventListener('click', togglePlay);
+    elements.prevBtn.addEventListener('click', playPreviousTrack);
+    elements.nextBtn.addEventListener('click', playNextTrack);
+    
+    // Eventos del reproductor de audio
+    elements.audioPlayer.addEventListener('loadedmetadata', updateDuration);
+    elements.audioPlayer.addEventListener('ended', playNextTrack);
+    
+    // Barra de progreso
+    const progressBar = document.querySelector('.progress-bar');
+    if (progressBar) {
+        progressBar.addEventListener('click', seek);
+    }
+}
+
+// Alternar reproducción/pausa
+function togglePlay() {
+    if (state.isPlaying) {
+        elements.audioPlayer.pause();
+    } else {
+        elements.audioPlayer.play();
+    }
+    state.isPlaying = !state.isPlaying;
+    updatePlayButton();
+}
+
+// Reproducir la canción anterior
+function playPreviousTrack() {
+    if (!state.currentPlaylist) return;
+
+    const tracks = state.currentPlaylist.tracks;
+    if (!tracks || tracks.length === 0) return;
+
+    let newIndex = state.currentTrackIndex - 1;
+    if (newIndex < 0) newIndex = tracks.length - 1;
+
+    const track = tracks[newIndex];
+    playTrack(track, state.currentPlaylist, newIndex);
+}
+
+// Reproducir la siguiente canción
+function playNextTrack() {
+    if (!state.currentPlaylist) return;
+
+    const tracks = state.currentPlaylist.tracks;
+    if (!tracks || tracks.length === 0) return;
+
+    let newIndex = state.currentTrackIndex + 1;
+    if (newIndex >= tracks.length) newIndex = 0;
+
+    const track = tracks[newIndex];
+    playTrack(track, state.currentPlaylist, newIndex);
+}
+
+// Actualizar la barra de progreso
+function updateProgress() {
+    const progressBar = document.querySelector('.progress');
+    const currentTimeElement = document.getElementById('current-time');
+    
+    if (!progressBar || !currentTimeElement) return;
+    
+    const { currentTime, duration } = elements.audioPlayer;
+    const progressPercent = (currentTime / duration) * 100;
+    
+    progressBar.style.width = `${progressPercent}%`;
+    currentTimeElement.textContent = formatTime(currentTime);
+}
+
+// Manejar la búsqueda en la barra de progreso
+function seek(e) {
+    if (!elements.audioPlayer.duration) return;
+    
+    const progressBar = e.currentTarget;
+    const clickPosition = e.clientX - progressBar.getBoundingClientRect().left;
+    const progressBarWidth = progressBar.clientWidth;
+    const seekTime = (clickPosition / progressBarWidth) * elements.audioPlayer.duration;
+    
+    elements.audioPlayer.currentTime = seekTime;
+}
+
+// Actualizar la duración total
+function updateDuration() {
+    const durationElement = document.getElementById('duration');
+    if (durationElement) {
+        durationElement.textContent = formatTime(elements.audioPlayer.duration);
+    }
+    
+    document.querySelectorAll('.track-item').forEach(item => {
+        item.classList.remove('playing');
+    });
+
+    // Agregar la clase 'playing' a la pista actual
+    if (state.currentPlaylist) {
+        const currentTrackElement = document.querySelector(`#tracks-${state.currentPlaylist.id} .track-item[data-index="${state.currentTrackIndex}"]`);
+        if (currentTrackElement) {
+            currentTrackElement.classList.add('playing');
+            currentTrackElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    }
+}
+
+// Formatear el tiempo en segundos a MM:SS
+function formatTime(seconds) {
+    if (isNaN(seconds)) return '0:00';
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+}
+
+// Formatear la duración en segundos a un formato legible
+function formatDuration(seconds) {
+    if (!seconds) return '0:00';
+    return formatTime(seconds);
+}
+
+// Inicializar el reproductor
+function initPlayer() {
+    console.log('Inicializando reproductor...');
+    // Cargar las listas de reproducción automáticamente
+    loadPlaylists();
+}
+
+// Inicializar el cliente de Google Identity Services
+function gisLoad() {
+    state.tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: CLIENT_ID,
+        scope: SCOPES,
+        callback: '', // Definido más adelante
+    });
+
+    state.gisInited = true;
+    console.log('Google Identity Services initialized');
+
+    // Verificar si ya hay un token de acceso
+    const token = localStorage.getItem('google_access_token');
+    if (token) {
+        // Verificar si el token es válido
+        const tokenInfo = JSON.parse(atob(token.split('.')[1]));
+        const isExpired = tokenInfo.exp * 1000 < Date.now();
+
+        if (!isExpired) {
+            console.log('Token de acceso válido encontrado');
+            gapi.client.setToken({ access_token: token });
+            return;
+        } else {
+            console.log('Token de acceso expirado');
+            localStorage.removeItem('google_access_token');
+        }
+    }
+
+    // Si no hay token o está expirado, solicitar autenticación
+    document.getElementById('authorize-button').style.display = 'block';
+    document.getElementById('authorize-button').onclick = handleAuthClick;
+}
+
+// Inicializar el cliente de la API de Google
+async function maybeInitializeClient() {
+    if (!state.gapiInited || !state.gisInited) {
+        console.log('Esperando a que se carguen las APIs...');
+        return;
+    }
+
+    try {
+        await gapi.client.init({});
+        await gapi.client.load('https://www.googleapis.com/discovery/v1/apis/drive/v3/rest');
+        console.log('Google Drive API inicializada');
+    } catch (error) {
+        console.error('Error al inicializar la API de Google Drive:', error);
+    }
+}
+
+// Manejar el clic en el botón de autorización
+async function handleAuthClick() {
+    if (!state.tokenClient) {
+        console.error('Token client no inicializado');
+        return;
+    }
+
+    // Configurar la función de callback para cuando se complete la autenticación
+    state.tokenClient.callback = async (response) => {
+        if (response.error !== undefined) {
+            console.error('Error de autenticación:', response.error);
+            return;
+        }
+
+        // Guardar el token de acceso
+        localStorage.setItem('google_access_token', response.access_token);
+        console.log('Autenticación exitosa');
+
+        // Ocultar el botón de autorización
+        document.getElementById('authorize-button').style.display = 'none';
+
+        // Inicializar el cliente de la API
+        await maybeInitializeClient();
+    };
+
+    // Solicitar el token de acceso
+    if (gapi.client.getToken() === null) {
+        state.tokenClient.requestAccessToken({ prompt: 'consent' });
+    } else {
+        state.tokenClient.requestAccessToken({ prompt: '' });
+    }
+}
+
+// Función para reproducir una canción
+function playTrack(track, playlist, index) {
+    if (!track || !track.url) {
+        console.error('La pista no tiene una URL válida');
+        showError('La pista seleccionada no tiene una URL válida');
+        return;
+    }
+
+    state.currentTrack = track;
+    state.currentPlaylist = playlist;
+    state.currentTrackIndex = index;
+    state.isPlaying = true;
+
+    // Actualizar la interfaz
+    elements.currentTrackElement.textContent = track.name;
+    elements.currentPlaylistElement.textContent = `De: ${playlist.name}`;
+    
+    // Actualizar la portada del álbum
+    if (playlist.coverUrl) {
+        elements.currentCover.src = playlist.coverUrl;
+        elements.currentCover.style.display = 'block';
+    }
+
+    // Mostrar indicador de carga
+    elements.currentTrackElement.innerHTML = `${track.name} <span class="loading-spinner">↻</span>`;
+    
+    // Limpiar el reproductor
+    elements.audioPlayer.pause();
+    elements.audioPlayer.src = '';
+    elements.audioPlayer.load();
+    
+    // Configurar la nueva fuente
+    elements.audioPlayer.src = track.url;
+    console.log('Reproduciendo:', track.url);
+
+    // Actualizar el botón de reproducción
+    updatePlayButton();
+
+    // Resaltar la canción actual
+    updateActiveTrack();
+
+    // Manejar errores de carga
+    elements.audioPlayer.onerror = function () {
+        console.error('Error al cargar el audio:', track.url);
+        console.error('Error del elemento de audio:', elements.audioPlayer.error);
+        
+        elements.currentTrackElement.innerHTML = `
+            ${track.name}
+            <div style="color: #ff6b6b; font-size: 0.8em; margin: 10px 0;">
+                Error al cargar el audio. Por favor, verifica que:
+                <ul style="text-align: left; margin: 5px 0 0 20px;">
+                    <li>El archivo exista en la ruta especificada</li>
+                    <li>El archivo sea un formato de audio compatible (MP3, WAV, etc.)</li>
+                    <li>La URL sea accesible: ${track.url}</li>
+                </ul>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="${track.url}" target="_blank" style="color: #1db954; text-decoration: none;">
+                    Intentar abrir directamente
+                </a>
+            </div>
+        `;
+        state.isPlaying = false;
+        updatePlayButton();
+    };
+
+    // Manejar cuando el audio está listo para reproducirse
+    elements.audioPlayer.oncanplay = function() {
+        console.log('Audio listo para reproducirse');
+        elements.currentTrackElement.textContent = track.name;
+    };
+
+    // Reproducir
+    const playPromise = elements.audioPlayer.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            console.error('Error al reproducir la canción:', error);
+            elements.currentTrackElement.textContent = `${track.name} (Error al reproducir)`;
+            state.isPlaying = false;
+            updatePlayButton();
+            showError(`No se pudo reproducir la canción: ${error.message}`);
+        });
+    }
+}
+
+// Inicializar la aplicación cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar el reproductor
+    initPlayer();
+
+    // Inicializar la aplicación
+    initApp();
+});
+
+// Manejar la tecla de espacio para reproducir/pausar
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' && !['INPUT', 'TEXTAREA', 'BUTTON'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
+        togglePlay();
+    }
+});

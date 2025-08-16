@@ -1,0 +1,935 @@
+{
+    "playlists": [
+        {
+            "id": "ff7-rebirth-disc1",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 1",
+            "description": "Original Soundtrack Disc 1",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%201]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d1-01",
+                    "name": "The Unknown Journey Continues",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/01%20The%20Unknown%20Journey%20Continues.mp3"
+                },
+                {
+                    "id": "d1-02",
+                    "name": "Another Buster Sword",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/02%20Another%20Buster%20Sword.mp3"
+                },
+                {
+                    "id": "d1-03",
+                    "name": "The War Hero Sephiroth",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/03%20The%20War%20Hero%20Sephiroth.mp3"
+                },
+                {
+                    "id": "d1-04",
+                    "name": "Zangan's Theme",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/04%20Zangan's%20Theme.mp3"
+                },
+                {
+                    "id": "d1-05",
+                    "name": "Toward Mt. Nibel",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/05%20Toward%20Mt.%20Nibel.mp3"
+                },
+                {
+                    "id": "d1-06",
+                    "name": "Eager SOLDIER",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/06%20Eager%20SOLDIER.mp3"
+                },
+                {
+                    "id": "d1-07",
+                    "name": "Ever-Eager SOLDIER",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/07%20Ever-Eager%20SOLDIER.mp3"
+                },
+                {
+                    "id": "d1-08",
+                    "name": "Materia Guardian",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/08%20Materia%20Guardian.mp3"
+                },
+                {
+                    "id": "d1-09",
+                    "name": "On Our Way - Sense of Kalm",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/09%20On%20Our%20Way%20-%20Sense%20of%20Kalm.mp3"
+                },
+                {
+                    "id": "d1-10",
+                    "name": "Queen's Blood",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/10%20Queen's%20Blood.mp3"
+                },
+                {
+                    "id": "d1-11",
+                    "name": "Queen's Blood - Victory",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/11%20Queen's%20Blood%20-%20Victory.mp3"
+                },
+                {
+                    "id": "d1-12",
+                    "name": "The Grasslands - A New Journey Begins",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/12%20The%20Grasslands%20-%20A%20New%20Journey%20Begins.mp3"
+                },
+                {
+                    "id": "d1-13",
+                    "name": "Main Theme of FFVII - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/13%20Main%20Theme%20of%20FFVII%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d1-14",
+                    "name": "Grasslands de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/14%20Grasslands%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d1-15",
+                    "name": "Lifestream - Fonts of Knowledge",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/15%20Lifestream%20-%20Fonts%20of%20Knowledge.mp3"
+                },
+                {
+                    "id": "d1-16",
+                    "name": "Farm Boy",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/16%20Farm%20Boy.mp3"
+                },
+                {
+                    "id": "d1-17",
+                    "name": "Chadley's Theme",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/17%20Chadley's%20Theme.mp3"
+                },
+                {
+                    "id": "d1-18",
+                    "name": "Hollow Skies - Midgar Region",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/18%20Hollow%20Skies%20-%20Midgar%20Region.mp3"
+                },
+                {
+                    "id": "d1-19",
+                    "name": "Hollow Skies - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/19%20Hollow%20Skies%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d1-20",
+                    "name": "Sanctuary",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/20%20Sanctuary.mp3"
+                },
+                {
+                    "id": "d1-21",
+                    "name": "Duel with the Divine",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/21%20Duel%20with%20the%20Divine.mp3"
+                },
+                {
+                    "id": "d1-22",
+                    "name": "Midgardsormr",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/22%20Midgardsormr.mp3"
+                },
+                {
+                    "id": "d1-23",
+                    "name": "Follow the Black Robes - Mythril Mine",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/23%20Follow%20the%20Black%20Robes%20-%20Mythril%20Mine.mp3"
+                },
+                {
+                    "id": "d1-24",
+                    "name": "Subterranean Grind",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%201%5D/24%20Subterranean%20Grind.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc2",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 2",
+            "description": "Original Soundtrack Disc 2",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%202]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d2-01",
+                    "name": "The Turks' Latest and Greatest Elena",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/01%20The%20Turks'%20Latest%20and%20Greatest%20Elena.mp3"
+                },
+                {
+                    "id": "d2-02",
+                    "name": "Mythril Golem",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/02%20Mythril%20Golem.mp3"
+                },
+                {
+                    "id": "d2-03",
+                    "name": "The Junon Region - Remnants of the Republic",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/03%20The%20Junon%20Region%20-%20Remnants%20of%20the%20Republic.mp3"
+                },
+                {
+                    "id": "d2-04",
+                    "name": "The Junon Region - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/04%20The%20Junon%20Region%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d2-05",
+                    "name": "Junon de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/05%20Junon%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d2-06",
+                    "name": "Under Junon - Sunless Oasis",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/06%20Under%20Junon%20-%20Sunless%20Oasis.mp3"
+                },
+                {
+                    "id": "d2-07",
+                    "name": "Junon - Fortified Metropolis",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/07%20Junon%20-%20Fortified%20Metropolis.mp3"
+                },
+                {
+                    "id": "d2-08",
+                    "name": "Rufus's Welcoming Ceremony - A New Leader",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/08%20Rufus's%20Welcoming%20Ceremony%20-%20A%20New%20Leader.mp3"
+                },
+                {
+                    "id": "d2-09",
+                    "name": "Rufus's Welcoming Ceremony - Seventh, Ten-Hut!",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/09%20Rufus's%20Welcoming%20Ceremony%20-%20Seventh%2C%20Ten-Hut!.mp3"
+                },
+                {
+                    "id": "d2-10",
+                    "name": "Ballad of the Bald - Shine Bright, My Sun",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/10%20Ballad%20of%20the%20Bald%20-%20Shine%20Bright%2C%20My%20Sun.mp3"
+                },
+                {
+                    "id": "d2-11",
+                    "name": "Rufus's Welcoming Ceremony - Inauguration Parade",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/11%20Rufus's%20Welcoming%20Ceremony%20-%20Inauguration%20Parade.mp3"
+                },
+                {
+                    "id": "d2-12",
+                    "name": "Commendation Ceremony - The Future Looks Bright",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/12%20Commendation%20Ceremony%20-%20The%20Future%20Looks%20Bright.mp3"
+                },
+                {
+                    "id": "d2-13",
+                    "name": "Assassination Attempt - Fugitive at Large",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/13%20Assassination%20Attempt%20-%20Fugitive%20at%20Large.mp3"
+                },
+                {
+                    "id": "d2-14",
+                    "name": "Rah, Rah, Roche!",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/14%20Rah%2C%20Rah%2C%20Roche!.mp3"
+                },
+                {
+                    "id": "d2-15",
+                    "name": "Queen's Blood Jam Session",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/15%20Queen's%20Blood%20Jam%20Session.mp3"
+                },
+                {
+                    "id": "d2-16",
+                    "name": "QB Tournament - Round 1",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/16%20QB%20Tournament%20-%20Round%201.mp3"
+                },
+                {
+                    "id": "d2-17",
+                    "name": "QB Tournament - Round 2",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/17%20QB%20Tournament%20-%20Round%202.mp3"
+                },
+                {
+                    "id": "d2-18",
+                    "name": "QB Tournament - Round 2 Afterparty",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/18%20QB%20Tournament%20-%20Round%202%20Afterparty.mp3"
+                },
+                {
+                    "id": "d2-19",
+                    "name": "QB Tournament - Round 3",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/19%20QB%20Tournament%20-%20Round%203.mp3"
+                },
+                {
+                    "id": "d2-20",
+                    "name": "QB Tournament - Semifinals",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/20%20QB%20Tournament%20-%20Semifinals.mp3"
+                },
+                {
+                    "id": "d2-21",
+                    "name": "Queen's Blood - Prodigious Pedigree",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/21%20Queen's%20Blood%20-%20Prodigious%20Pedigree.mp3"
+                },
+                {
+                    "id": "d2-22",
+                    "name": "Red's Dance - Two Legs Nothin' To It",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/22%20Red's%20Dance%20-%20Two%20Legs%20Nothin'%20To%20It.mp3"
+                },
+                {
+                    "id": "d2-23",
+                    "name": "Red's QB Match - Overfang",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%202%5D/23%20Red's%20QB%20Match%20-%20Overfang.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc3",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 3",
+            "description": "Original Soundtrack Disc 3",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%203]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d3-01",
+                    "name": "Hurry! - Necrotic Entity Mix",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/01%20Hurry!%20-%20Necrotic%20Entity%20Mix.mp3"
+                },
+                {
+                    "id": "d3-02",
+                    "name": "J-E-N-O-V-A - Emergence",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/02%20J-E-N-O-V-A%20-%20Emergence.mp3"
+                },
+                {
+                    "id": "d3-03",
+                    "name": "Costa del Sol - Fun in the Sun",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/03%20Costa%20del%20Sol%20-%20Fun%20in%20the%20Sun.mp3"
+                },
+                {
+                    "id": "d3-04",
+                    "name": "Johnny's Seaside Inn",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/04%20Johnny's%20Seaside%20Inn.mp3"
+                },
+                {
+                    "id": "d3-05",
+                    "name": "Fool's Paradise - Amor Fun in the　Sun",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/05 Fool's Paradise - Amor Fun in the　Sun.mp3"
+                },
+                {
+                    "id": "d3-06",
+                    "name": "Grasptropod",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/06%20Grasptropod.mp3"
+                },
+                {
+                    "id": "d3-07",
+                    "name": "With Heavy Heart - A Seabreeze Stroll",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/07%20With%20Heavy%20Heart%20-%20A%20Seabreeze%20Stroll.mp3"
+                },
+                {
+                    "id": "d3-08",
+                    "name": "With Heavy Heart - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/08%20With%20Heavy%20Heart%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d3-09",
+                    "name": "Corel de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/09%20Corel%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d3-10",
+                    "name": "Let's Go, Mt. Corel!",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/10%20Let's%20Go%2C%20Mt.%20Corel!.mp3"
+                },
+                {
+                    "id": "d3-11",
+                    "name": "Firework Blade",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/11%20Firework%20Blade.mp3"
+                },
+                {
+                    "id": "d3-12",
+                    "name": "Custom Valkyrie",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/12%20Custom%20Valkyrie.mp3"
+                },
+                {
+                    "id": "d3-13",
+                    "name": "A Portentous Sky",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/13%20A%20Portentous%20Sky.mp3"
+                },
+                {
+                    "id": "d3-14",
+                    "name": "End of the World",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/14%20End%20of%20the%20World.mp3"
+                },
+                {
+                    "id": "d3-15",
+                    "name": "Barret's Theme - Bitter Memories",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/15%20Barret's%20Theme%20-%20Bitter%20Memories.mp3"
+                },
+                {
+                    "id": "d3-16",
+                    "name": "Ninjacrobatics",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/16%20Ninjacrobatics.mp3"
+                },
+                {
+                    "id": "d3-17",
+                    "name": "Gigatrice",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/17%20Gigatrice.mp3"
+                },
+                {
+                    "id": "d3-18",
+                    "name": "Mark of a Traitor",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/18%20Mark%20of%20a%20Traitor.mp3"
+                },
+                {
+                    "id": "d3-19",
+                    "name": "Welcome to the Gold Saucer",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/19%20Welcome%20to%20the%20Gold%20Saucer.mp3"
+                },
+                {
+                    "id": "d3-20",
+                    "name": "Bare Your Soul",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/20%20Bare%20Your%20Soul.mp3"
+                },
+                {
+                    "id": "d3-21",
+                    "name": "3D Brawler",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/21%203D%20Brawler.mp3"
+                },
+                {
+                    "id": "d3-22",
+                    "name": "Haunted Hotel",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/22%20Haunted%20Hotel.mp3"
+                },
+                {
+                    "id": "d3-23",
+                    "name": "The Gold Saucer - Night Out with Tifa",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/23%20The%20Gold%20Saucer%20-%20Night%20Out%20with%20Tifa.mp3"
+                },
+                {
+                    "id": "d3-24",
+                    "name": "The Gold Saucer - Night Out with Aerith",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/24%20The%20Gold%20Saucer%20-%20Night%20Out%20with%20Aerith.mp3"
+                },
+                {
+                    "id": "d3-25",
+                    "name": "The Gold Saucer - Night Out with Yuffie",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%203%5D/25%20The%20Gold%20Saucer%20-%20Night%20Out%20with%20Yuffie.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc4",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 4",
+            "description": "Original Soundtrack Disc 4",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%204]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d4-01",
+                    "name": "Fiddle de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/01%20Fiddle%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d4-02",
+                    "name": "Wonderment Square - Arcade Classics",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/02%20Wonderment%20Square%20-%20Arcade%20Classics.mp3"
+                },
+                {
+                    "id": "d4-03",
+                    "name": "Battle Square - Musclehead Colosseum",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/03%20Battle%20Square%20-%20Musclehead%20Colosseum.mp3"
+                },
+                {
+                    "id": "d4-04",
+                    "name": "Speed Square - Galactic Saviors",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/04%20Speed%20Square%20-%20Galactic%20Saviors.mp3"
+                },
+                {
+                    "id": "d4-05",
+                    "name": "Queen's Blood - Card Challenges",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/05%20Queen's%20Blood%20-%20Card%20Challenges.mp3"
+                },
+                {
+                    "id": "d4-06",
+                    "name": "The Gus Funk",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/06%20The%20Gus%20Funk.mp3"
+                },
+                {
+                    "id": "d4-07",
+                    "name": "Desert Wasteland - Corel Prison",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/07%20Desert%20Wasteland%20-%20Corel%20Prison.mp3"
+                },
+                {
+                    "id": "d4-08",
+                    "name": "Chocobo Races - Ready to Ride",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/08%20Chocobo%20Races%20-%20Ready%20to%20Ride.mp3"
+                },
+                {
+                    "id": "d4-09",
+                    "name": "The Chocobo Cup - First Call",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/09%20The%20Chocobo%20Cup%20-%20First%20Call.mp3"
+                },
+                {
+                    "id": "d4-10",
+                    "name": "The Chocobo Cup - Final Lap",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/10%20The%20Chocobo%20Cup%20-%20Final%20Lap.mp3"
+                },
+                {
+                    "id": "d4-11",
+                    "name": "Chocobo Races - Victory Lap",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/11%20Chocobo%20Races%20-%20Victory%20Lap.mp3"
+                },
+                {
+                    "id": "d4-12",
+                    "name": "Best of Friends Together Again",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/12%20Best%20of%20Friends%20Together%20Again.mp3"
+                },
+                {
+                    "id": "d4-13",
+                    "name": "Annihilation Beam",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/13%20Annihilation%20Beam.mp3"
+                },
+                {
+                    "id": "d4-14",
+                    "name": "What Hate Does to a Man",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/14%20What%20Hate%20Does%20to%20a%20Man.mp3"
+                },
+                {
+                    "id": "d4-15",
+                    "name": "Anuran Suppressor",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/15%20Anuran%20Suppressor.mp3"
+                },
+                {
+                    "id": "d4-16",
+                    "name": "Prison Break",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/16%20Prison%20Break.mp3"
+                },
+                {
+                    "id": "d4-17",
+                    "name": "Corel Desert",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/17%20Corel%20Desert.mp3"
+                },
+                {
+                    "id": "d4-18",
+                    "name": "Corel Desert - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/18%20Corel%20Desert%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d4-19",
+                    "name": "Red Buggy Ride 'n' Roll",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/19%20Red%20Buggy%20Ride%20'n'%20Roll.mp3"
+                },
+                {
+                    "id": "d4-20",
+                    "name": "Jungles of Gongaga",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/20%20Jungles%20of%20Gongaga.mp3"
+                },
+                {
+                    "id": "d4-21",
+                    "name": "Jungles of Gongaga - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/21%20Jungles%20of%20Gongaga%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d4-22",
+                    "name": "Gongaga de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/22%20Gongaga%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d4-23",
+                    "name": "The Village of Gongaga",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/23%20The%20Village%20of%20Gongaga.mp3"
+                },
+                {
+                    "id": "d4-24",
+                    "name": "Weapon's Cry",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/24%20Weapon's%20Cry.mp3"
+                },
+                {
+                    "id": "d4-25",
+                    "name": "The Whispers Beckon",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/25%20The%20Whispers%20Beckon.mp3"
+                },
+                {
+                    "id": "d4-26",
+                    "name": "Mako Overdose",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/26%20Mako%20Overdose.mp3"
+                },
+                {
+                    "id": "d4-27",
+                    "name": "Hurry Up!",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/27%20Hurry%20Up!.mp3"
+                },
+                {
+                    "id": "d4-28",
+                    "name": "Crimson Mare Mk. II",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%204%5D/28%20Crimson%20Mare%20Mk.%20II.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc5",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 5",
+            "description": "Original Soundtrack Disc 5",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%205]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d5-01",
+                    "name": "Cosmo Canyon Region",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/01%20Cosmo%20Canyon%20Region.mp3"
+                },
+                {
+                    "id": "d5-02",
+                    "name": "Cosmo Canyon Region - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/02%20Cosmo%20Canyon%20Region%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d5-03",
+                    "name": "Cosmo de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/03%20Cosmo%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d5-04",
+                    "name": "Cosmo Canyon - Sanctum of Planetology",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/04%20Cosmo%20Canyon%20-%20Sanctum%20of%20Planetology.mp3"
+                },
+                {
+                    "id": "d5-05",
+                    "name": "Cosmo Observatory",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/05%20Cosmo%20Observatory.mp3"
+                },
+                {
+                    "id": "d5-06",
+                    "name": "River of Lights",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/06%20River%20of%20Lights.mp3"
+                },
+                {
+                    "id": "d5-07",
+                    "name": "Cave of the Gi",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/07%20Cave%20of%20the%20Gi.mp3"
+                },
+                {
+                    "id": "d5-08",
+                    "name": "Watcher of the Vale",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/08%20Watcher%20of%20the%20Vale.mp3"
+                },
+                {
+                    "id": "d5-09",
+                    "name": "Lake of Blood",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/09%20Lake%20of%20Blood.mp3"
+                },
+                {
+                    "id": "d5-10",
+                    "name": "Gi Nattak",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/10%20Gi%20Nattak.mp3"
+                },
+                {
+                    "id": "d5-11",
+                    "name": "Brave and Noble Seto",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/11%20Brave%20and%20Noble%20Seto.mp3"
+                },
+                {
+                    "id": "d5-12",
+                    "name": "Village of the Gi",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/12%20Village%20of%20the%20Gi.mp3"
+                },
+                {
+                    "id": "d5-13",
+                    "name": "With Pain and Spite Made Black",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/13%20With%20Pain%20and%20Spite%20Made%20Black.mp3"
+                },
+                {
+                    "id": "d5-14",
+                    "name": "Nomads in Death",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/14%20Nomads%20in%20Death.mp3"
+                },
+                {
+                    "id": "d5-15",
+                    "name": "Purest of Materia",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/15%20Purest%20of%20Materia.mp3"
+                },
+                {
+                    "id": "d5-16",
+                    "name": "Nibel Region",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/16%20Nibel%20Region.mp3"
+                },
+                {
+                    "id": "d5-17",
+                    "name": "Nibel Region - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/17%20Nibel%20Region%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d5-18",
+                    "name": "Nibel de Chocobo",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/18%20Nibel%20de%20Chocobo.mp3"
+                },
+                {
+                    "id": "d5-19",
+                    "name": "Forgotten Specimen",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/19%20Forgotten%20Specimen.mp3"
+                },
+                {
+                    "id": "d5-20",
+                    "name": "Galian Beast",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/20%20Galian%20Beast.mp3"
+                },
+                {
+                    "id": "d5-21",
+                    "name": "Shinra Resistance Committee",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/21%20Shinra%20Resistance%20Committee.mp3"
+                },
+                {
+                    "id": "d5-22",
+                    "name": "Cid's Theme - Send Up Smoke",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/22%20Cid's%20Theme%20-%20Send%20Up%20Smoke.mp3"
+                },
+                {
+                    "id": "d5-23",
+                    "name": "The Tiny Bronco Sails the Sea",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/23%20The%20Tiny%20Bronco%20Sails%20the%20Sea.mp3"
+                },
+                {
+                    "id": "d5-24",
+                    "name": "Battle on the Big Bridge - Rebirth",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%205%5D/24%20Battle%20on%20the%20Big%20Bridge%20-%20Rebirth.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc6",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 6",
+            "description": "Original Soundtrack Disc 6",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%206]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d6-01",
+                    "name": "Loveless - Gift of the Goddess",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/01%20Loveless%20-%20Gift%20of%20the%20Goddess.mp3"
+                },
+                {
+                    "id": "d6-02",
+                    "name": "Loveless - The City of Guardia",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/02%20Loveless%20-%20The%20City%20of%20Guardia.mp3"
+                },
+                {
+                    "id": "d6-03",
+                    "name": "Loveless - Victim of Conquest",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/03%20Loveless%20-%20Victim%20of%20Conquest.mp3"
+                },
+                {
+                    "id": "d6-04",
+                    "name": "Loveless - Broken Shackles",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/04%20Loveless%20-%20Broken%20Shackles.mp3"
+                },
+                {
+                    "id": "d6-05",
+                    "name": "Loveless - The Dragon King Varvados",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/05%20Loveless%20-%20The%20Dragon%20King%20Varvados.mp3"
+                },
+                {
+                    "id": "d6-06",
+                    "name": "Loveless - The Humble Fool",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/06%20Loveless%20-%20The%20Humble%20Fool.mp3"
+                },
+                {
+                    "id": "d6-07",
+                    "name": "Loveless - The Hellhound Garm",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/07%20Loveless%20-%20The%20Hellhound%20Garm.mp3"
+                },
+                {
+                    "id": "d6-08",
+                    "name": "Loveless - Sealed with a Kiss",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/08%20Loveless%20-%20Sealed%20with%20a%20Kiss.mp3"
+                },
+                {
+                    "id": "d6-09",
+                    "name": "Loveless - Truest Love",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/09%20Loveless%20-%20Truest%20Love.mp3"
+                },
+                {
+                    "id": "d6-10",
+                    "name": "Loveless - Let My Blade Strike True!",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/10%20Loveless%20-%20Let%20My%20Blade%20Strike%20True!.mp3"
+                },
+                {
+                    "id": "d6-11",
+                    "name": "Loveless - Grand Finale",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/11%20Loveless%20-%20Grand%20Finale.mp3"
+                },
+                {
+                    "id": "d6-12",
+                    "name": "No Promises to Keep (LOVELESS Ver.)",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/12%20No%20Promises%20to%20Keep%20(LOVELESS%20Ver.).mp3"
+                },
+                {
+                    "id": "d6-13",
+                    "name": "The Fight for Naming Rights",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/13%20The%20Fight%20for%20Naming%20Rights.mp3"
+                },
+                {
+                    "id": "d6-14",
+                    "name": "Straight Outta Corneoland",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/14%20Straight%20Outta%20Corneoland.mp3"
+                },
+                {
+                    "id": "d6-15",
+                    "name": "Straight Outta Corneoland - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/15%20Straight%20Outta%20Corneoland%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d6-16",
+                    "name": "Cacneo Carnival",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/16%20Cacneo%20Carnival.mp3"
+                },
+                {
+                    "id": "d6-17",
+                    "name": "Enter the Donberry",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/17%20Enter%20the%20Donberry.mp3"
+                },
+                {
+                    "id": "d6-18",
+                    "name": "Don Corneo and Abzu - HOHI HOHI Mix",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/18%20Don%20Corneo%20and%20Abzu%20-%20HOHI%20HOHI%20Mix.mp3"
+                },
+                {
+                    "id": "d6-19",
+                    "name": "Dio's Champions",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/19%20Dio's%20Champions.mp3"
+                },
+                {
+                    "id": "d6-20",
+                    "name": "Tussle with the Turks",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/20%20Tussle%20with%20the%20Turks.mp3"
+                },
+                {
+                    "id": "d6-21",
+                    "name": "Rumble with Rufus",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/21%20Rumble%20with%20Rufus.mp3"
+                },
+                {
+                    "id": "d6-22",
+                    "name": "A Wild Cat Chase",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/22%20A%20Wild%20Cat%20Chase.mp3"
+                },
+                {
+                    "id": "d6-23",
+                    "name": "Final Voyage",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/23%20Final%20Voyage.mp3"
+                },
+                {
+                    "id": "d6-24",
+                    "name": "Temple of the Ancients",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/24%20Temple%20of%20the%20Ancients.mp3"
+                },
+                {
+                    "id": "d6-25",
+                    "name": "Temple of the Ancients - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/25%20Temple%20of%20the%20Ancients%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d6-26",
+                    "name": "Listen to the Cries of the Planet",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/26%20Listen%20to%20the%20Cries%20of%20the%20Planet.mp3"
+                },
+                {
+                    "id": "d6-27",
+                    "name": "Listen to the Cries of the Planet - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/27%20Listen%20to%20the%20Cries%20of%20the%20Planet%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d6-28",
+                    "name": "Labyrinth of the Lifestream",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/28%20Labyrinth%20of%20the%20Lifestream.mp3"
+                },
+                {
+                    "id": "d6-29",
+                    "name": "Labyrinth of the Lifestream - Battle Edit",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/29%20Labyrinth%20of%20the%20Lifestream%20-%20Battle%20Edit.mp3"
+                },
+                {
+                    "id": "d6-30",
+                    "name": "The Turks - Reno and Rude",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/30%20The%20Turks%20-%20Reno%20and%20Rude.mp3"
+                },
+                {
+                    "id": "d6-31",
+                    "name": "The Turks - Tseng and Elena",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%206%5D/31%20The%20Turks%20-%20Tseng%20and%20Elena.mp3"
+                }
+            ]
+        },
+        {
+            "id": "ff7-rebirth-disc7",
+            "name": "FINAL FANTASY VII REBIRTH - Disc 7",
+            "description": "Original Soundtrack Disc 7",
+            "coverUrl": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20[Disc%207]/cover.jpg",
+            "tracks": [
+                {
+                    "id": "d7-01",
+                    "name": "Adventure's End",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/01%20Adventure's%20End.mp3"
+                },
+                {
+                    "id": "d7-02",
+                    "name": "Demon Gates",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/02%20Demon%20Gates.mp3"
+                },
+                {
+                    "id": "d7-03",
+                    "name": "Revival of the Black Materia",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/03%20Revival%20of%20the%20Black%20Materia.mp3"
+                },
+                {
+                    "id": "d7-04",
+                    "name": "One Last Date - My Dream",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/04%20One%20Last%20Date%20-%20My%20Dream.mp3"
+                },
+                {
+                    "id": "d7-05",
+                    "name": "Her Final Prayer",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/05%20Her%20Final%20Prayer.mp3"
+                },
+                {
+                    "id": "d7-06",
+                    "name": "Aerith's Theme - The White Materia",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/06%20Aerith's%20Theme%20-%20The%20White%20Materia.mp3"
+                },
+                {
+                    "id": "d7-07",
+                    "name": "J-E-N-O-V-A - Tenacity",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/07%20J-E-N-O-V-A%20-%20Tenacity.mp3"
+                },
+                {
+                    "id": "d7-08",
+                    "name": "Just as Worlds Unite",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/08%20Just%20as%20Worlds%20Unite.mp3"
+                },
+                {
+                    "id": "d7-09",
+                    "name": "The Three SOLDIERs",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/09%20The%20Three%20SOLDIERs.mp3"
+                },
+                {
+                    "id": "d7-10",
+                    "name": "So Too Do They Part",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/10%20So%20Too%20Do%20They%20Part.mp3"
+                },
+                {
+                    "id": "d7-11",
+                    "name": "Sephiroth Reborn - Advent",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/11%20Sephiroth%20Reborn%20-%20Advent.mp3"
+                },
+                {
+                    "id": "d7-12",
+                    "name": "Sephiroth Reborn - Transfiguration",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/12%20Sephiroth%20Reborn%20-%20Transfiguration.mp3"
+                },
+                {
+                    "id": "d7-13",
+                    "name": "Sephiroth Reborn - For Aerith",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/13%20Sephiroth%20Reborn%20-%20For%20Aerith.mp3"
+                },
+                {
+                    "id": "d7-14",
+                    "name": "Sephiroth Reborn - Embrace Your Dreams",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/14%20Sephiroth%20Reborn%20-%20Embrace%20Your%20Dreams.mp3"
+                },
+                {
+                    "id": "d7-15",
+                    "name": "Sephiroth Reborn - Second Advent",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/15%20Sephiroth%20Reborn%20-%20Second%20Advent.mp3"
+                },
+                {
+                    "id": "d7-16",
+                    "name": "Let's End This─Together",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/16 Let's End This─Together.mp3"
+                },
+                {
+                    "id": "d7-17",
+                    "name": "One-Winged Angel - Reborn",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/17%20One-Winged%20Angel%20-%20Reborn.mp3"
+                },
+                {
+                    "id": "d7-18",
+                    "name": "Everybody's Waiting",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/18%20Everybody's%20Waiting.mp3"
+                },
+                {
+                    "id": "d7-19",
+                    "name": "Distant Skies",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/19%20Distant%20Skies.mp3"
+                },
+                {
+                    "id": "d7-20",
+                    "name": "Aerith's Theme - Return to the Planet",
+                    "file": "https://raw.githubusercontent.com/emuWebview/music/main/FINAL%20FANTASY%20VII%20REBIRTH%20Original%20Soundtrack%20%5BDisc%207%5D/20%20Aerith's%20Theme%20-%20Return%20to%20the%20Planet.mp3"
+                }
+            ]
+        }
+    ]
+}
