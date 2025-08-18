@@ -21,7 +21,8 @@ a {
 .container {
     display: flex;
     min-height: 100vh;
-    padding-bottom: 90px; /* Space for the player bar */
+    padding-bottom: 90px;
+    /* Space for the player bar */
 }
 
 /* Sidebar */
@@ -45,6 +46,14 @@ a {
     align-items: center;
     font-size: 24px;
     font-weight: 700;
+}
+
+.logo-img {
+    width: 32px;
+    /* ajusta tamaño según necesites */
+    height: 32px;
+    object-fit: contain;
+    margin-right: 8px;
 }
 
 .logo i {
@@ -640,7 +649,7 @@ a {
     .playlist-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
-    
+
     .playlist-name {
         font-size: 48px;
     }
@@ -651,48 +660,48 @@ a {
         width: 72px;
         overflow: hidden;
     }
-    
+
     .sidebar .logo span,
     .sidebar .nav-links li span {
         display: none;
     }
-    
+
     .sidebar .nav-links li {
         justify-content: center;
     }
-    
+
     .sidebar .nav-links li i {
         margin-right: 0;
         font-size: 24px;
     }
-    
+
     .main-content {
         margin-left: 72px;
     }
-    
+
     .playlist-header {
         flex-direction: column;
     }
-    
+
     .playlist-header-cover {
         width: 200px;
         height: 200px;
         margin: 0 auto 24px;
     }
-    
+
     .playlist-header-info {
         text-align: center;
     }
-    
+
     .playlist-actions {
         justify-content: center;
     }
-    
+
     .tracks-header,
     .track {
         grid-template-columns: 16px 4fr 2fr 1fr;
     }
-    
+
     .tracks-header div:nth-child(4),
     .track div:nth-child(4) {
         display: none;
@@ -704,20 +713,20 @@ a {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 16px;
     }
-    
+
     .playlist-name {
         font-size: 36px;
     }
-    
+
     .search-bar {
         width: 200px;
     }
-    
+
     .tracks-header,
     .track {
         grid-template-columns: 16px 4fr 1fr;
     }
-    
+
     .tracks-header div:nth-child(3),
     .track div:nth-child(3) {
         display: none;
